@@ -1,0 +1,101 @@
+PS C:\Users\h-oha\git_tutorial> dir
+
+
+    ディレクトリ: C:\Users\h-oha\git_tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/05/18     15:52                kadai_github
+d-----        2025/05/15     14:17                move_test
+d-----        2025/05/16     12:01                samurai_terak
+                                                  oya
+d-----        2025/05/16     13:53                課題
+
+
+PS C:\Users\h-oha\git_tutorial> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\h-oha\git_tutorial
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/05/18     16:24                git_challenge
+
+
+PS C:\Users\h-oha\git_tutorial> cd git_challenge
+PS C:\Users\h-oha\git_tutorial\git_challenge> git init
+Initialized empty Git repository in C:/Users/h-oha/git_tutorial/git_challenge/.git/
+PS C:\Users\h-oha\git_tutorial\git_challenge> echo -n >>hello_world.txt
+
+コマンド パイプライン位置 1 のコマンドレット Write-Output
+次のパラメーターに値を指定してください:
+InputObject[0]:
+PS C:\Users\h-oha\git_tutorial\git_challenge> dir
+
+
+    ディレクトリ: C:\Users\h-oha\git_tutorial\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2025/05/18     16:26              0 hello_world.txt
+
+
+PS C:\Users\h-oha\git_tutorial\git_challenge> echo "Hello,world!" >> hello_world.txt
+PS C:\Users\h-oha\git_tutorial\git_challenge> git add hello_world.txt
+PS C:\Users\h-oha\git_tutorial\git_challenge> git commit -m "hello_world.txtに「Hello,world！」と追記"  
+[main (root-commit) c7e2361] hello_world.txtに「Hello,world！」と追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\h-oha\git_tutorial\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\h-oha\git_tutorial\git_challenge> git add hello_world.txt
+PS C:\Users\h-oha\git_tutorial\git_challenge> git commit -m "hello_world.txtに「こんにちは、世界！」と追記"  
+[main 5cc038c] hello_world.txtに「こんにちは、世界！」と追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\h-oha\git_tutorial\git_challenge> git log --oneline
+5cc038c (HEAD -> main) hello_world.txtに「こんにちは、世界！」と追記
+c7e2361 hello_world.txtに「Hello,world！」と追記
+PS C:\Users\h-oha\git_tutorial\git_challenge> mkdir kadai_005
+
+
+    ディレクトリ: C:\Users\h-oha\git_tutorial\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/05/18     16:37                kadai_005
+
+
+PS C:\Users\h-oha\git_tutorial\git_challenge> dir
+
+
+    ディレクトリ: C:\Users\h-oha\git_tutorial\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/05/18     16:37                kadai_005
+-a----        2025/05/18     16:33             52 hello_world.txt
+
+
+PS C:\Users\h-oha\git_tutorial\git_challenge> cd kadai_005
+PS C:\Users\h-oha\git_tutorial\git_challenge\kadai_005> echo -n >> kadai_005.txt
+
+コマンド パイプライン位置 1 のコマンドレット Write-Output
+次のパラメーターに値を指定してください:
+InputObject[0]:
+PS C:\Users\h-oha\git_tutorial\git_challenge\kadai_005> 
+PS C:\Users\h-oha\git_tutorial\git_challenge\kadai_005> dir
+
+
+    ディレクトリ: C:\Users\h-oha\git_tutorial\git_challenge\kadai_005
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2025/05/18     16:38              0 kadai_005.txt
+
+
+PS C:\Users\h-oha\git_tutorial\git_challenge\kadai_005>
